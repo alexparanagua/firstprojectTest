@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: CI_aula5
 
 # Controls when the workflow will run
 on:
@@ -30,7 +30,7 @@ jobs:
         uses: docker/login-action@v3.6.0
         with: 
           username: 'alexparanagua'
-          password: ${{SECRET_DOCKERHUB}}
+          password: ${{secrets.SECRET_DOCKERHUB}}
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
