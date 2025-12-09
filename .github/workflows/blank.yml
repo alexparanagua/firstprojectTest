@@ -36,5 +36,5 @@ jobs:
         uses: docker/build-push-action@v6.18.0
         with:
           context: .
-          tags: 'latest'
+          tags: 'alexparanagua/firstproject:latest'
           push: true
